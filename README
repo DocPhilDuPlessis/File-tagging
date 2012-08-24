@@ -1,0 +1,49 @@
+### Welcome to my File Tagging Project
+This project has been created to tag files found on my computer.
+Problems that I have with what currently exists:
+
+### Cloud
+Cloud is brilliant. It is where we all will end up. Eventually.
+HOWEVER --->
+	a)	I work in a third world country. If I get 500KB per second it's been a good day. Bandwidth means I am always 2 years behind the real gurus (yeah - I am definitely not a guru by any stretch, rather I want to be there someday).
+	b)	Bandwidth in this neck of the woods - wow she's expensive. So for example, my 10TB spinning disk would cost my salary to keep in the cloud.
+	c)	Problem with not keeping in the cloud --> I had 16TB 2 weeks ago. SERIOUSLY. I dropped a 3TB while helping someone and saw one of my backup drives go in smoke.
+			MS is amazing but can be so dof sometimes!!! I tried installing Windows home server and it even prompted me for a path and all. RTFM is lovely - I didn't. It wipes the primary. For which I dropped the backup. SERIOUSLY.
+			Then I get cracking with recovery software. Because MS overwrote the drive, it overwrote my partition structure and filetable. As such, only RAW recover occurs. Ever try and tag 400GB of music (the other stuff was relatively painless but I am NOT tagging over 10000 files). So I sought a solution. Github is part of this solution. It will be broader than music but starts there.
+
+### MS SQL 2012
+	Yes, I did say MS is dof. A few lines back. And I concur. A filetable data type is a beaut. But having ONE database manage your entire file system. HELL freegin no. You tie yourself into all kinds of problems
+	a) What if your backup is corrupt?
+	b) Backing up via SQL means you limit yourself to SQL performance.
+	c) In disaster (drive goes down for example) and you are able to recover (MBR wiped for example) you will not lose the files. Even after deleting.
+	In my (VERY humble) opinion, you should let the database handle data. It is a moot point as to what consists of data. I will rephrase - let the database handle "information" which is groupings of data.
+	For example, music is seen to some as data. In my personal context, music is entertainment. It is something enjoyed which belongs in a library and is best backed up by the file system, not the databse.
+	My 5 cents.
+	
+	HOWEVER. Storing information about the music files (including the funky attributes you get such as contributing artist, genre etc...), now THAT belongs in a database.
+	It is in your best interest to go as wide as possible on storing details. Because if you recover RAW, then you will need to match to stupid filenames. The more info you have, the easier the matching.
+			
+### My illustruous linux/unix journey
+	No, I wasnt born with a unix manual under my pillow, nor was I fed linux in class.
+	My computer career has been largely windows based. BUT I do stand in awe of Linux. "Once you go black you never go back".
+	So my route for solutions is: 
+		(a) OPENSOURCE rules. I dont even own a credit card and have fundamental issues against paying for something I can make.
+		(b) Find a windows solution. Really. Look hard, look long and only give up when you realize it is a different operating system community.
+		(c) If the software is THAT good then do the homework, the math, read the freegin manual, lose the darn sleep and time is seriously money. For example, Github works on windows magically. It even has a unix shell. Imagine that... Also remember that VMWare is one piece of software I paid for on day 1. Because this software changed the way I did things like hosting Linux servers inside of Windows. But everything has a cost. In this case the cost is the time of setting up, troubleshooting code which never seems to work quite at the same quality levels, reading manuals, and seriously investing in coffee,
+
+### Special thanks to
+	Github - you guys are THE bomb, the shizzle, the beez knees, amazing, fan-freegin tastic, AYOBA and really really hot.
+	Microsoft. For wiping my primary. But also for tools such as visual studio (every bit as good as eclipse with a twist), windows 8 (metro sucks because its so brilliant yet so dumb), office 365 and FINALLY waking up to the cloud.
+	Linux and Unix. For being my viable alternatives.
+	Apple. For being good at smartphones but sucking totally at everything else.
+	Everyone who ever posted anything on tagging and extended properties online. I will be sure to add pages for each and every method used, the why, the how and where I got the info from.
+	My kiddies (for studying the back of my head).
+		
+### Contribute (or not)
+	I am not asking for anyone to contribute. Would be nice. But I do ask you to add value if you decide to fork this page. And please dont spam.
+
+
+
+	
+Finally - welcome to my file-tagging repo.
+Enjoy your visit.
